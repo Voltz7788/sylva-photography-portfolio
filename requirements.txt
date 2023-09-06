@@ -1,0 +1,8 @@
+- Should be able to filter list of images based on category (on server side - server actions maybe?)
+    - Category should be pre-defined
+- Masonry CSS solution (react-masonry-css)
+- Background image for entire page
+- lightbox solution (lightgallery)
+
+- Where do we store our images?
+    - Mongodb / Prisma + object storage (AWS S3)
