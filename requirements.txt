@@ -1,3 +1,29 @@
+UI Structure:
+- Navbar -> Logo, About, Portfolio, Client Love, Contact (sticky/fixed)
+- Hero -> image (full screen) and header
+- About Page:
+    - heading
+    - picture of sylva
+    - about me text
+- Portfolio:
+    - Masonary portfolio (react-masonary-css)
+    - Lightbox solution (lightgallery)
+- Client Love Page:
+    - heading
+    - x6 reviews (organised by grid?)
+- Footer
+    - Logo, menu items, contact, social media icons
+
+Assets:
+- Fonts (Noto sans, Fjalla One, Inter )
+- Icons (iconify?)
+- Images (unsplah - temp)
+
+
+
+
+
+Video requirements:
 - Should be able to filter list of images based on category (on server side - server actions maybe?)
     - Category should be pre-defined
 - Masonry CSS solution (react-masonry-css)
@@ -6,3 +32,6 @@
 
 - Where do we store our images?
     - Mongodb / Prisma + object storage (AWS S3)
+
+- Pages:
+- Portfolio, About, Contact
