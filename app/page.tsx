@@ -9,7 +9,7 @@ const montserrat = Montserrat({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <main className="w-full hero h-screen ">
+    <main className="w-full hero h-screen">
       <Hero />
       <AboutHomePage />
     </main>

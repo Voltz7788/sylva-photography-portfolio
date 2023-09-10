@@ -6,7 +6,7 @@ const montserrat = Montserrat({ subsets: ["latin"] });
 
 export default function Navbar() {
   return (
-    <nav className="flex justify-center items-center text-neutral-100 h-24 relative">
+    <nav className="flex justify-center items-center text-neutral-100 h-24 relative z-10">
       <a
         href="/"
         className={`absolute font-bold uppercase text-center left-10 top-5 p-2 ${montserrat.className}`}
