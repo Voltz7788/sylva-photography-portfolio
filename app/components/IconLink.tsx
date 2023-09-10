@@ -12,7 +12,7 @@ export default function IconLink({ icon, href }: props) {
     <a href={href} target="_blank">
       <Icon
         icon={icon}
-        width={40}
+        width={30}
         className="text-neutral-700 hover:text-blue-500 transition-all"
       />
     </a>

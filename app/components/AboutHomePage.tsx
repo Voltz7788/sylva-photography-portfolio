@@ -12,18 +12,30 @@ export default function AboutHomePage() {
   return (
     <div className="bg-neutral-100 flex justify-center py-16 lg:py-40 ">
       <div className="flex items-center lg:w-3/4 flex-col lg:flex-row">
-        <Image
-          src={sylvaImage}
-          width={1000}
-          height={1000}
-          alt="Sylva Madu"
-          className="object-cover w-1/2 rounded-sm"
-        />
-        <div className="lg:w-1/2 px-12 relative pt-7 lg:pt-0">
+        <div className="w-1/2">
+          <Image
+            src={sylvaImage}
+            width={1000}
+            height={1000}
+            alt="Sylva Madu"
+            className="object-cover rounded-sm"
+          />
+          <div className="flex gap-5 pt-7">
+            <IconLink
+              icon="mdi:instagram"
+              href="https://www.instagram.com/sylva.madu_photography_/"
+            />
+            <IconLink
+              icon="mdi:linkedin"
+              href="https://www.linkedin.com/in/sylva-madu-9b8531263/"
+            />
+          </div>
+        </div>
+        <div className="lg:w-1/2 px-12 relative pt-7 lg:pt-0 h-full">
           <h1 className="uppercase text-4xl font-bold text-center">
             Hello there,
           </h1>
-          <p className="text-2xl text-center pt-2">{`I'm sylva.`}</p>
+          <p className="text-2xl text-center pt-2">{`I'm Sylva.`}</p>
           <p className="pt-8 text-lg text-center">
             {`I'm a Photographer based in London, and I've been taking photos for
             about 4 years. My love for photography was born from my innate
@@ -37,21 +49,10 @@ export default function AboutHomePage() {
             captures the rawness of my surroundings. As a result, my favourite
             type of photography is live events photography.`}
           </p>
-          <div className="">
-            <div className="flex gap-10 justify-center pt-20">
-              <ButtonLink title="Portfolio" href="/portfolio" />
-              <ButtonLink title="Contact Me" href="/portfolio" />
-            </div>
-            <div className="flex gap-5 pt-7">
-              <IconLink
-                icon="mdi:instagram"
-                href="https://www.instagram.com/sylva.madu_photography_/"
-              />
-              <IconLink
-                icon="mdi:linkedin"
-                href="https://www.linkedin.com/in/sylva-madu-9b8531263/"
-              />
-            </div>
+
+          <div className="flex gap-10 justify-center pt-20">
+            <ButtonLink title="Portfolio" href="/portfolio" />
+            <ButtonLink title="Contact Me" href="/portfolio" />
           </div>
         </div>
       </div>
