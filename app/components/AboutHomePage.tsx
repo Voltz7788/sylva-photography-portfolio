@@ -5,12 +5,13 @@ import { Icon } from "@iconify/react";
 // Image
 import photographer from "../../public/photographer.jpg";
 import sylvaImage from "../../public/sylva.jpg";
+
 import IconLink from "./IconLink";
 import ButtonLink from "./ButtonLink";
 
 export default function AboutHomePage() {
   return (
-    <div className="bg-neutral-100 flex justify-center py-16 lg:py-40 ">
+    <div className="aboutMe  bg-neutral-100 flex justify-center py-16 lg:py-40 ">
       <div className="flex items-center lg:w-3/4 flex-col lg:flex-row">
         <div className="w-1/2">
           <Image

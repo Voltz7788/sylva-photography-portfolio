@@ -12,3 +12,9 @@
     ),
     url("/band-bg.jpg");
 }
+
+.aboutMe {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("/marble-bg.jpg");
+}
