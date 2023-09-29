@@ -12,15 +12,15 @@ import MusicPortrait4 from "../../public/music-portrait-4.jpg";
 export default function PhilosophySection() {
   return (
     <div>
-      <div className="grid grid-cols-philosphy grid-rows-philosophy gap-3 mx-2">
+      <div className="flex flex-col lg:grid lg:grid-cols-philosphy lg:grid-rows-philosophy gap-3 lg:mx-2">
         <Image
           src={MusicPortrait1}
           alt=""
-          className="object-cover w-full h-full"
+          className="object-cover w-full h-full hidden lg:inline-block"
         />
         <div className="row-span-2 flex flex-col justify-between gap-3 h-full">
           <Image src={MusicLandscape1} alt="" className="object-cover w-full" />
-          <div className="text-center w-4/5 lg:w-4/5 xl:w-3/5 m-auto">
+          <div className="text-center w-4/5 lg:w-4/5 xl:w-3/5 m-auto my-10 sm:my-20 md:my-32 lg:my-0">
             <h2 className="text-2xl md:text-3xl font-bold uppercase">
               My Philosophy
             </h2>
@@ -38,17 +38,17 @@ export default function PhilosophySection() {
         <Image
           src={MusicPortrait3}
           alt=""
-          className="object-cover w-full h-full"
+          className="object-cover w-full h-full hidden lg:inline-block"
         />
         <Image
           src={MusicPortrait2}
           alt=""
-          className="object-cover w-full h-full"
+          className="object-cover w-full h-full hidden lg:inline-block"
         />
         <Image
           src={MusicPortrait4}
           alt=""
-          className="object-cover w-full h-full"
+          className="object-cover w-full h-full hidden lg:inline-block"
         />
       </div>
     </div>
