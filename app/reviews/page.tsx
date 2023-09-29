@@ -1,5 +1,5 @@
 import React from "react";
 
-export default function page() {
-  return <div>page</div>;
+export default function ReviewsPage() {
+  return <div>Reviews Page</div>;
 }
