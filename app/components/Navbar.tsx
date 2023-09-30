@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import { Inter, Montserrat } from "next/font/google";
 import Link from "next/link";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
-import Logo from "./Logo";
 
 const inter = Inter({ subsets: ["latin"] });
 const montserrat = Montserrat({ subsets: ["latin"] });
@@ -16,7 +15,14 @@ export default function Navbar() {
   };
   return (
     <nav className="flex justify-center items-center text-neutral-100 h-24 relative z-10">
-      <Logo />
+      <Link
+        onClick={handleNav}
+        href="/"
+        className={`absolute font-bold uppercase text-center left-10 top-5 p-2 z-10 ${montserrat.className}`}
+      >
+        <p className="text-xl md:text-2xl lg:text-3xl">Sylva Madu</p>
+        <p className="text-sm md:text-md lg:text-lg">Photography</p>
+      </Link>
       <ul
         className={`invisible md:visible flex ml-20 lg:ml-0 md:gap-8 lg:gap-16 xl:gap-28 2xl:gap-36 justify-center w-1/2 pb-10 pt-10 text-sm font-semibold ${montserrat.className}`}
       >

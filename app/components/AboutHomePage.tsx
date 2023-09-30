@@ -11,15 +11,15 @@ import ButtonLink from "./ButtonLink";
 
 export default function AboutHomePage() {
   return (
-    <div className="aboutMe  bg-neutral-100 flex justify-center py-16 lg:py-40 ">
-      <div className="flex items-center lg:w-3/4 flex-col lg:flex-row">
+    <div className="aboutMe bg-neutral-100 flex justify-center py-16 lg:py-40 overflow-x-hidden">
+      <div className="flex items-center w-full lg:w-3/4 flex-col lg:flex-row">
         <div className="w-1/2">
           <Image
             src={sylvaImage}
             width={1000}
             height={1000}
             alt="Sylva Madu"
-            className="object-cover rounded-sm"
+            className="object-cover rounded-[1000px]"
           />
           <div className="flex gap-5 pt-7">
             <IconLink
