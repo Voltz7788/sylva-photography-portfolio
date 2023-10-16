@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar";
 import { Montserrat } from "next/font/google";
 import Image from "next/image";
+import Footer from "./components/Footer";
 
 // Images
 
@@ -16,6 +17,7 @@ export default function Home() {
       <Hero />
       <AboutHomePage />
       <PhilosophySection />
+      <Footer />
     </main>
   );
 }

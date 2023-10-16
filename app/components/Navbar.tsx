@@ -13,6 +13,7 @@ export default function Navbar() {
   const handleNav = () => {
     setNav(!nav);
   };
+
   return (
     <nav className="flex justify-center items-center text-neutral-100 h-24 relative z-10">
       <Link
