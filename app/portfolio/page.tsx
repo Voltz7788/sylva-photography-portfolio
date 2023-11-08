@@ -3,6 +3,7 @@ import React, { useRef } from "react";
 import Masonry from "react-masonry-css";
 import Image from "next/image";
 import LightGalleryComponent from "lightgallery/react";
+import Navbar from "../components/Navbar";
 
 // import styles
 import "lightgallery/css/lightgallery.css";
@@ -38,8 +39,9 @@ export default function PortfolioPage() {
   const lightboxRef = useRef<LightGallery | null>(null);
 
   return (
-    <div>
-      <div className="flex justify-center mt-20">
+    <div className="bg-black -mt-52">
+      {/* <Navbar /> */}
+      <div className="flex justify-center pt-72">
         <Masonry
           breakpointCols={3}
           className="flex -ml-[30px] w-10/12"
