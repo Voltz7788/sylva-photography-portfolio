@@ -15,25 +15,27 @@ import lgThumbnail from "lightgallery/plugins/thumbnail";
 import lgZoom from "lightgallery/plugins/zoom";
 import { LightGallery } from "lightgallery/lightgallery";
 
-import musicImage4 from "../../public/music-portrait-4.jpg";
-import musicImage3 from "../../public/music-portrait-3.jpg";
-import musicImage2 from "../../public/music-portrait-2.jpg";
-import musicImage1 from "../../public/music-portrait-1.jpg";
+// import musicImage4 from "../../public/music-portrait-4.jpg";
+// import musicImage3 from "../../public/music-portrait-3.jpg";
+// import musicImage2 from "../../public/music-portrait-2.jpg";
+// import musicImage1 from "../../public/music-portrait-1.jpg";
 
-const images = [
-  musicImage1,
-  musicImage2,
-  musicImage3,
-  musicImage4,
-  musicImage1,
-  musicImage2,
-  musicImage3,
-  musicImage4,
-  musicImage1,
-  musicImage2,
-  musicImage3,
-  musicImage4,
-];
+// const images = [
+//   musicImage1,
+//   musicImage2,
+//   musicImage3,
+//   musicImage4,
+//   musicImage1,
+//   musicImage2,
+//   musicImage3,
+//   musicImage4,
+//   musicImage1,
+//   musicImage2,
+//   musicImage3,
+//   musicImage4,
+// ];
+
+import { images } from "../utilities/getImages";
 
 export default function PortfolioPage() {
   const lightboxRef = useRef<LightGallery | null>(null);
@@ -52,7 +54,7 @@ export default function PortfolioPage() {
               key={item.src}
               src={item}
               alt={`${item}`}
-              className="mb-10"
+              className="mb-10 cursor-pointer"
               placeholder="blur"
               onClick={() => {
                 lightboxRef.current?.openGallery(index);

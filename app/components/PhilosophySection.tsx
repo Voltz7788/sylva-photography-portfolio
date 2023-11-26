@@ -11,15 +11,21 @@ import MusicPortrait4 from "../../public/music-portrait-4.jpg";
 
 export default function PhilosophySection() {
   return (
-    <div>
+    <div className="bg-white">
       <div className="flex flex-col lg:grid lg:grid-cols-philosphy lg:grid-rows-philosophy gap-3 lg:mx-2">
         <Image
           src={MusicPortrait1}
           alt=""
           className="object-cover w-full h-full hidden lg:inline-block"
+          placeholder="blur"
         />
         <div className="row-span-2 flex flex-col justify-between gap-3 h-full">
-          <Image src={MusicLandscape1} alt="" className="object-cover w-full" />
+          <Image
+            src={MusicLandscape1}
+            alt=""
+            className="object-cover w-full"
+            placeholder="blur"
+          />
           <div className="text-center w-4/5 lg:w-4/5 xl:w-3/5 m-auto my-10 sm:my-20 md:my-32 lg:my-0">
             <h2 className="text-2xl md:text-3xl font-bold uppercase">
               My Philosophy
@@ -33,22 +39,30 @@ export default function PhilosophySection() {
               real moments captured in the most beautiful way possible.`}
             </p>
           </div>
-          <Image src={MusicLandscape2} alt="" className="object-cover w-full" />
+          <Image
+            src={MusicLandscape2}
+            alt=""
+            className="object-cover w-full"
+            placeholder="blur"
+          />
         </div>
         <Image
           src={MusicPortrait3}
           alt=""
           className="object-cover w-full h-full hidden lg:inline-block"
+          placeholder="blur"
         />
         <Image
           src={MusicPortrait2}
           alt=""
           className="object-cover w-full h-full hidden lg:inline-block"
+          placeholder="blur"
         />
         <Image
           src={MusicPortrait4}
           alt=""
           className="object-cover w-full h-full hidden lg:inline-block"
+          placeholder="blur"
         />
       </div>
     </div>

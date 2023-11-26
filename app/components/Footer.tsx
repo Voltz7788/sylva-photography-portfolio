@@ -14,7 +14,7 @@ export default function Footer() {
   };
 
   return (
-    <div className="flex flex-col items-center mt-10 lg:-mt-20">
+    <div className="flex flex-col items-center mt-10 lg:-mt-20 bg-white">
       <Link
         onClick={handleNav}
         href="/"
